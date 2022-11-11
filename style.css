@@ -37,13 +37,7 @@ a:hover {
   color: var(--forestgreen);
 }
 
-#my-resume, a:link {
-  color: var(--forestgreen);
-}
 
-#my-resume, a:hover {
-  color: var(--forestgreen);
-}
 /* Top Portion - Navigation Bar */
 .header {
     background-color: var(--forestgreen);
@@ -162,6 +156,11 @@ a:hover {
   padding: 20px;
   margin: 15px;
 }
+
+#my-resume {
+  color: var(--forestgreen);
+}
+
 /* About Me Portion Ends*/
 
 
