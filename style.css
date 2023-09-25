@@ -1,9 +1,8 @@
-
 :root {
-  --dustypink: #FBD2C2;
-  --lightbluegray: #D8E1E3;
-  --forestgreen: #29505B;
-  --terracotta: #BC6C29;
+  --dustypink: #fbd2c2;
+  --lightbluegray: #d8e1e3;
+  --forestgreen: #29505b;
+  --terracotta: #bc6c29;
 }
 
 body {
@@ -12,7 +11,8 @@ body {
 
 hr.solid {
   border-top: 3px solid var(--terracotta);
-  width: 50%; margin: 2% 25% 2% 25%;;
+  width: 50%;
+  margin: 2% 25% 2% 25%;
   justify-content: center;
   padding: 20px;
 }
@@ -29,7 +29,8 @@ a:visited {
   color: var(--dustypink);
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: var(--lightbluegray);
 }
 
@@ -37,61 +38,59 @@ a:hover {
   color: var(--forestgreen);
 }
 
-
 /* Top Portion - Navigation Bar */
 .header {
-    background-color: var(--forestgreen);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-  }
+  background-color: var(--forestgreen);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
 
 .initials-div {
-    display: flex;
-    flex-direction: start;
-    align-items: flex-start;
-    align-self: center;
-    margin: 15px 15px;
+  display: flex;
+  flex-direction: start;
+  align-items: flex-start;
+  align-self: center;
+  margin: 15px 15px;
 }
 
 .initials {
-    display: flex;
-    flex-direction: start;
-    align-items: flex-start;
-    align-self: center;
-    margin: 15px 15px;
-    color: var(--dustypink);
-    font-family: 'Great Vibes', Courier, monospace;
-    font-size: xxx-large;
-    font-weight: bold;
+  display: flex;
+  flex-direction: start;
+  align-items: flex-start;
+  align-self: center;
+  margin: 15px 15px;
+  color: var(--dustypink);
+  font-family: "Great Vibes", Courier, monospace;
+  font-size: xxx-large;
+  font-weight: bold;
 }
 
 .navigation-bar {
-    justify-content: flex-end;
-    padding: 0px;
-    margin-left: 15px;
-    margin-right: 15px;
+  justify-content: flex-end;
+  padding: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-
 .navbar-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: sansita;
-    list-style: none;
-    padding: 10px 0px;
-    margin: 20px;
-    text-decoration: none;
-    font-size: 1.8rem;
-    gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: sansita;
+  list-style: none;
+  padding: 10px 0px;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.8rem;
+  gap: 3rem;
 }
 
 .navbar {
-    list-style: none;
-    font-family: Montserrat, sans-serif;
-    color: var(--dustypink);
+  list-style: none;
+  font-family: Montserrat, sans-serif;
+  color: var(--dustypink);
 }
 
 /* Top Portion - Navigation Bar End */
@@ -99,11 +98,15 @@ a:hover {
 /* About Me Portion*/
 
 .introduction {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+#space {
+  min-height: 10px;
 }
 
 .hello {
@@ -163,7 +166,6 @@ a:hover {
 
 /* About Me Portion Ends*/
 
-
 /* Projects Section */
 
 #project-id {
@@ -191,13 +193,18 @@ a:hover {
   color: var(--terracotta);
   margin: auto 2rem 2rem;
 }
-.portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
+.portfolio-item .caption .caption-content h2,
+.portfolio-item .caption .caption-content .h2 {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
 .portfolio-item .caption .caption-content p {
   font-weight: 300;
   font-size: 1.2rem;
+}
+.links {
+  margin-top: 5px;
+  padding-top: 5px;
 }
 @media (min-width: 992px) {
   .portfolio-item {
@@ -207,9 +214,10 @@ a:hover {
   .portfolio-item .caption {
     transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out, background-color 0.7s;
-    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, background-color 0.7s,
+      -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(0px);
-            clip-path: inset(0px);
+    clip-path: inset(0px);
   }
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
@@ -222,16 +230,16 @@ a:hover {
     transition: clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
-            clip-path: inset(-1px);
+    clip-path: inset(-1px);
   }
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
+    clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
     background-color: var(--dustypink);
     -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
+    clip-path: inset(2rem);
   }
 }
 
@@ -260,7 +268,8 @@ a:hover {
   color: var(--terracotta);
   margin: auto 2rem 2rem;
 }
-.portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
+.portfolio-item .caption .caption-content h2,
+.portfolio-item .caption .caption-content .h2 {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
@@ -276,9 +285,10 @@ a:hover {
   .portfolio-item .caption {
     transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out, background-color 0.7s;
-    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, background-color 0.7s,
+      -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(0px);
-            clip-path: inset(0px);
+    clip-path: inset(0px);
   }
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
@@ -291,16 +301,16 @@ a:hover {
     transition: clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
-            clip-path: inset(-1px);
+    clip-path: inset(-1px);
   }
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
+    clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
     background-color: var(--dustypink);
     -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
+    clip-path: inset(2rem);
   }
 }
 
@@ -334,7 +344,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: var(--dustypink);
+  background-color: var(--terracotta);
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
